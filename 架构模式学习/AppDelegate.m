@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "MVCViewController.h"
+#import "MVPViewController.h"
+#import "MVVMViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +19,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    MVVMViewController *rootVC = [[MVVMViewController alloc] init];
+    self.window.rootViewController = rootVC;
     return YES;
 }
 

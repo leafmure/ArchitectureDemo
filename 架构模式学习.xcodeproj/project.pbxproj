@@ -15,6 +15,21 @@
 		C86D01F9219929C900D802A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D01F8219929C900D802A3 /* main.m */; };
 		C86D0203219929C900D802A3 /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D0202219929C900D802A3 /* ______Tests.m */; };
 		C86D020E219929C900D802A3 /* ______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D020D219929C900D802A3 /* ______UITests.m */; };
+		C86D022721992CCF00D802A3 /* CocoaMVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D022621992CCF00D802A3 /* CocoaMVCViewController.m */; };
+		C86D022A21992D4900D802A3 /* CocoaMVCAnimal.h.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D022921992D4900D802A3 /* CocoaMVCAnimal.h.m */; };
+		C86D022D21992EFA00D802A3 /* CocoaMVCAnimalDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D022C21992EFA00D802A3 /* CocoaMVCAnimalDetailView.m */; };
+		C86D023321995BB900D802A3 /* MVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D023221995BB900D802A3 /* MVCViewController.m */; };
+		C86D023621995BD900D802A3 /* MVCAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D023521995BD900D802A3 /* MVCAnimal.m */; };
+		C86D023921995BED00D802A3 /* MVCAnimalDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D023821995BED00D802A3 /* MVCAnimalDetailView.m */; };
+		C86D024421995EB100D802A3 /* MVPAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D023D21995EB100D802A3 /* MVPAnimal.m */; };
+		C86D024521995EB100D802A3 /* MVPView.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D024021995EB100D802A3 /* MVPView.m */; };
+		C86D024621995EB100D802A3 /* MVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D024321995EB100D802A3 /* MVPViewController.m */; };
+		C86D024921995F7E00D802A3 /* MVPAnimalPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D024821995F7E00D802A3 /* MVPAnimalPresenter.m */; };
+		C86D02562199682900D802A3 /* MVVMView.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D024C2199682800D802A3 /* MVVMView.m */; };
+		C86D02572199682900D802A3 /* MVVMAnimalViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D024F2199682800D802A3 /* MVVMAnimalViewModel.m */; };
+		C86D02582199682900D802A3 /* MVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D02522199682800D802A3 /* MVVMViewController.m */; };
+		C86D02592199682900D802A3 /* MVVMAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D02552199682800D802A3 /* MVVMAnimal.m */; };
+		C86D02622199825500D802A3 /* VIPERViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D02612199825500D802A3 /* VIPERViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +66,36 @@
 		C86D0209219929C900D802A3 /* 架构模式学习UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "架构模式学习UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C86D020D219929C900D802A3 /* ______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______UITests.m"; sourceTree = "<group>"; };
 		C86D020F219929C900D802A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C86D022521992CCF00D802A3 /* CocoaMVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaMVCViewController.h; sourceTree = "<group>"; };
+		C86D022621992CCF00D802A3 /* CocoaMVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaMVCViewController.m; sourceTree = "<group>"; };
+		C86D022821992D4900D802A3 /* CocoaMVCAnimal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaMVCAnimal.h; sourceTree = "<group>"; };
+		C86D022921992D4900D802A3 /* CocoaMVCAnimal.h.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaMVCAnimal.h.m; sourceTree = "<group>"; };
+		C86D022B21992EFA00D802A3 /* CocoaMVCAnimalDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaMVCAnimalDetailView.h; sourceTree = "<group>"; };
+		C86D022C21992EFA00D802A3 /* CocoaMVCAnimalDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaMVCAnimalDetailView.m; sourceTree = "<group>"; };
+		C86D023121995BB900D802A3 /* MVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCViewController.h; sourceTree = "<group>"; };
+		C86D023221995BB900D802A3 /* MVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCViewController.m; sourceTree = "<group>"; };
+		C86D023421995BD900D802A3 /* MVCAnimal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCAnimal.h; sourceTree = "<group>"; };
+		C86D023521995BD900D802A3 /* MVCAnimal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCAnimal.m; sourceTree = "<group>"; };
+		C86D023721995BED00D802A3 /* MVCAnimalDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCAnimalDetailView.h; sourceTree = "<group>"; };
+		C86D023821995BED00D802A3 /* MVCAnimalDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCAnimalDetailView.m; sourceTree = "<group>"; };
+		C86D023C21995EB100D802A3 /* MVPAnimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPAnimal.h; sourceTree = "<group>"; };
+		C86D023D21995EB100D802A3 /* MVPAnimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPAnimal.m; sourceTree = "<group>"; };
+		C86D023F21995EB100D802A3 /* MVPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPView.h; sourceTree = "<group>"; };
+		C86D024021995EB100D802A3 /* MVPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPView.m; sourceTree = "<group>"; };
+		C86D024221995EB100D802A3 /* MVPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPViewController.h; sourceTree = "<group>"; };
+		C86D024321995EB100D802A3 /* MVPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPViewController.m; sourceTree = "<group>"; };
+		C86D024721995F7E00D802A3 /* MVPAnimalPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPAnimalPresenter.h; sourceTree = "<group>"; };
+		C86D024821995F7E00D802A3 /* MVPAnimalPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPAnimalPresenter.m; sourceTree = "<group>"; };
+		C86D024B2199682800D802A3 /* MVVMView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMView.h; sourceTree = "<group>"; };
+		C86D024C2199682800D802A3 /* MVVMView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMView.m; sourceTree = "<group>"; };
+		C86D024E2199682800D802A3 /* MVVMAnimalViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMAnimalViewModel.h; sourceTree = "<group>"; };
+		C86D024F2199682800D802A3 /* MVVMAnimalViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMAnimalViewModel.m; sourceTree = "<group>"; };
+		C86D02512199682800D802A3 /* MVVMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMViewController.h; sourceTree = "<group>"; };
+		C86D02522199682800D802A3 /* MVVMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMViewController.m; sourceTree = "<group>"; };
+		C86D02542199682800D802A3 /* MVVMAnimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMAnimal.h; sourceTree = "<group>"; };
+		C86D02552199682800D802A3 /* MVVMAnimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMAnimal.m; sourceTree = "<group>"; };
+		C86D02602199825500D802A3 /* VIPERViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIPERViewController.h; sourceTree = "<group>"; };
+		C86D02612199825500D802A3 /* VIPERViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VIPERViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +146,8 @@
 		C86D01E8219929C700D802A3 /* 架构模式学习 */ = {
 			isa = PBXGroup;
 			children = (
+				C86D021C21992A1400D802A3 /* objective-c */,
+				C86D021B21992A1400D802A3 /* swift */,
 				C86D01E9219929C700D802A3 /* AppDelegate.h */,
 				C86D01EA219929C700D802A3 /* AppDelegate.m */,
 				C86D01EC219929C700D802A3 /* ViewController.h */,
@@ -130,6 +177,250 @@
 				C86D020F219929C900D802A3 /* Info.plist */,
 			);
 			path = "架构模式学习UITests";
+			sourceTree = "<group>";
+		};
+		C86D021B21992A1400D802A3 /* swift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = swift;
+			sourceTree = "<group>";
+		};
+		C86D021C21992A1400D802A3 /* objective-c */ = {
+			isa = PBXGroup;
+			children = (
+				C86D021D21992B2100D802A3 /* 苹果意愿MVC */,
+				C86D022121992B2100D802A3 /* 传统MVC */,
+				C86D022021992B2100D802A3 /* MVP */,
+				C86D021F21992B2100D802A3 /* MVVM */,
+				C86D021E21992B2100D802A3 /* VIPER */,
+			);
+			path = "objective-c";
+			sourceTree = "<group>";
+		};
+		C86D021D21992B2100D802A3 /* 苹果意愿MVC */ = {
+			isa = PBXGroup;
+			children = (
+				C86D022321992C9C00D802A3 /* Model */,
+				C86D022421992C9C00D802A3 /* View */,
+				C86D022221992C9C00D802A3 /* Controller */,
+			);
+			path = "苹果意愿MVC";
+			sourceTree = "<group>";
+		};
+		C86D021E21992B2100D802A3 /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				C86D025E219981CD00D802A3 /* Controller */,
+				C86D025F219981CD00D802A3 /* View */,
+				C86D025A219981CD00D802A3 /* Interactor */,
+				C86D025B219981CD00D802A3 /* Presenter */,
+				C86D025C219981CD00D802A3 /* Entity */,
+				C86D025D219981CD00D802A3 /* Router */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
+		C86D021F21992B2100D802A3 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				C86D02502199682800D802A3 /* Controller */,
+				C86D02532199682800D802A3 /* Model */,
+				C86D024A2199682800D802A3 /* View */,
+				C86D024D2199682800D802A3 /* ViewModel */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		C86D022021992B2100D802A3 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				C86D024121995EB100D802A3 /* Controller */,
+				C86D023B21995EB100D802A3 /* Model */,
+				C86D023E21995EB100D802A3 /* View */,
+				C86D023A21995EB100D802A3 /* Presenter */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		C86D022121992B2100D802A3 /* 传统MVC */ = {
+			isa = PBXGroup;
+			children = (
+				C86D022F21995B9E00D802A3 /* Model */,
+				C86D022E21995B9E00D802A3 /* View */,
+				C86D023021995B9E00D802A3 /* Controller */,
+			);
+			path = "传统MVC";
+			sourceTree = "<group>";
+		};
+		C86D022221992C9C00D802A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C86D022521992CCF00D802A3 /* CocoaMVCViewController.h */,
+				C86D022621992CCF00D802A3 /* CocoaMVCViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C86D022321992C9C00D802A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C86D022821992D4900D802A3 /* CocoaMVCAnimal.h */,
+				C86D022921992D4900D802A3 /* CocoaMVCAnimal.h.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C86D022421992C9C00D802A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C86D022B21992EFA00D802A3 /* CocoaMVCAnimalDetailView.h */,
+				C86D022C21992EFA00D802A3 /* CocoaMVCAnimalDetailView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C86D022E21995B9E00D802A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C86D023721995BED00D802A3 /* MVCAnimalDetailView.h */,
+				C86D023821995BED00D802A3 /* MVCAnimalDetailView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C86D022F21995B9E00D802A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C86D023421995BD900D802A3 /* MVCAnimal.h */,
+				C86D023521995BD900D802A3 /* MVCAnimal.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C86D023021995B9E00D802A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C86D023121995BB900D802A3 /* MVCViewController.h */,
+				C86D023221995BB900D802A3 /* MVCViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C86D023A21995EB100D802A3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C86D024721995F7E00D802A3 /* MVPAnimalPresenter.h */,
+				C86D024821995F7E00D802A3 /* MVPAnimalPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C86D023B21995EB100D802A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C86D023C21995EB100D802A3 /* MVPAnimal.h */,
+				C86D023D21995EB100D802A3 /* MVPAnimal.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C86D023E21995EB100D802A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C86D023F21995EB100D802A3 /* MVPView.h */,
+				C86D024021995EB100D802A3 /* MVPView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C86D024121995EB100D802A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C86D024221995EB100D802A3 /* MVPViewController.h */,
+				C86D024321995EB100D802A3 /* MVPViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C86D024A2199682800D802A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C86D024B2199682800D802A3 /* MVVMView.h */,
+				C86D024C2199682800D802A3 /* MVVMView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C86D024D2199682800D802A3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C86D024E2199682800D802A3 /* MVVMAnimalViewModel.h */,
+				C86D024F2199682800D802A3 /* MVVMAnimalViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C86D02502199682800D802A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C86D02512199682800D802A3 /* MVVMViewController.h */,
+				C86D02522199682800D802A3 /* MVVMViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C86D02532199682800D802A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C86D02542199682800D802A3 /* MVVMAnimal.h */,
+				C86D02552199682800D802A3 /* MVVMAnimal.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C86D025A219981CD00D802A3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C86D025B219981CD00D802A3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C86D025C219981CD00D802A3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C86D025D219981CD00D802A3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C86D025E219981CD00D802A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C86D02602199825500D802A3 /* VIPERViewController.h */,
+				C86D02612199825500D802A3 /* VIPERViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C86D025F219981CD00D802A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +553,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C86D02582199682900D802A3 /* MVVMViewController.m in Sources */,
+				C86D02572199682900D802A3 /* MVVMAnimalViewModel.m in Sources */,
 				C86D01EE219929C700D802A3 /* ViewController.m in Sources */,
+				C86D022D21992EFA00D802A3 /* CocoaMVCAnimalDetailView.m in Sources */,
+				C86D02592199682900D802A3 /* MVVMAnimal.m in Sources */,
+				C86D02622199825500D802A3 /* VIPERViewController.m in Sources */,
+				C86D024921995F7E00D802A3 /* MVPAnimalPresenter.m in Sources */,
+				C86D024521995EB100D802A3 /* MVPView.m in Sources */,
+				C86D024621995EB100D802A3 /* MVPViewController.m in Sources */,
+				C86D022721992CCF00D802A3 /* CocoaMVCViewController.m in Sources */,
+				C86D022A21992D4900D802A3 /* CocoaMVCAnimal.h.m in Sources */,
 				C86D01F9219929C900D802A3 /* main.m in Sources */,
 				C86D01EB219929C700D802A3 /* AppDelegate.m in Sources */,
+				C86D023921995BED00D802A3 /* MVCAnimalDetailView.m in Sources */,
+				C86D023621995BD900D802A3 /* MVCAnimal.m in Sources */,
+				C86D024421995EB100D802A3 /* MVPAnimal.m in Sources */,
+				C86D023321995BB900D802A3 /* MVCViewController.m in Sources */,
+				C86D02562199682900D802A3 /* MVVMView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
