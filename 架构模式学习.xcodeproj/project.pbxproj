@@ -30,6 +30,11 @@
 		C86D02582199682900D802A3 /* MVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D02522199682800D802A3 /* MVVMViewController.m */; };
 		C86D02592199682900D802A3 /* MVVMAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D02552199682800D802A3 /* MVVMAnimal.m */; };
 		C86D02622199825500D802A3 /* VIPERViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D02612199825500D802A3 /* VIPERViewController.m */; };
+		C878E587219ACE8C00B2B941 /* VIPERView.m in Sources */ = {isa = PBXBuildFile; fileRef = C878E586219ACE8C00B2B941 /* VIPERView.m */; };
+		C878E58A219ACEA700B2B941 /* VIPERInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = C878E589219ACEA700B2B941 /* VIPERInteractor.m */; };
+		C878E58D219ACEBB00B2B941 /* VIPERPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = C878E58C219ACEBB00B2B941 /* VIPERPresenter.m */; };
+		C878E590219ACEE600B2B941 /* VIPERAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = C878E58F219ACEE600B2B941 /* VIPERAnimal.m */; };
+		C878E593219ACEFC00B2B941 /* VIPERRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = C878E592219ACEFC00B2B941 /* VIPERRouter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +101,19 @@
 		C86D02552199682800D802A3 /* MVVMAnimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMAnimal.m; sourceTree = "<group>"; };
 		C86D02602199825500D802A3 /* VIPERViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIPERViewController.h; sourceTree = "<group>"; };
 		C86D02612199825500D802A3 /* VIPERViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VIPERViewController.m; sourceTree = "<group>"; };
+		C878E585219ACE8C00B2B941 /* VIPERView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIPERView.h; sourceTree = "<group>"; };
+		C878E586219ACE8C00B2B941 /* VIPERView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VIPERView.m; sourceTree = "<group>"; };
+		C878E588219ACEA700B2B941 /* VIPERInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIPERInteractor.h; sourceTree = "<group>"; };
+		C878E589219ACEA700B2B941 /* VIPERInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VIPERInteractor.m; sourceTree = "<group>"; };
+		C878E58B219ACEBB00B2B941 /* VIPERPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIPERPresenter.h; sourceTree = "<group>"; };
+		C878E58C219ACEBB00B2B941 /* VIPERPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VIPERPresenter.m; sourceTree = "<group>"; };
+		C878E58E219ACEE600B2B941 /* VIPERAnimal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIPERAnimal.h; sourceTree = "<group>"; };
+		C878E58F219ACEE600B2B941 /* VIPERAnimal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VIPERAnimal.m; sourceTree = "<group>"; };
+		C878E591219ACEFC00B2B941 /* VIPERRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIPERRouter.h; sourceTree = "<group>"; };
+		C878E592219ACEFC00B2B941 /* VIPERRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VIPERRouter.m; sourceTree = "<group>"; };
+		C878E594219AD56800B2B941 /* VIPERDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIPERDataProvider.h; sourceTree = "<group>"; };
+		C878E595219AD59400B2B941 /* VIPERDataOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIPERDataOutput.h; sourceTree = "<group>"; };
+		C878E596219AD79600B2B941 /* VIPERViewEventHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIPERViewEventHandler.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,11 +230,11 @@
 			isa = PBXGroup;
 			children = (
 				C86D025E219981CD00D802A3 /* Controller */,
-				C86D025F219981CD00D802A3 /* View */,
-				C86D025A219981CD00D802A3 /* Interactor */,
-				C86D025B219981CD00D802A3 /* Presenter */,
-				C86D025C219981CD00D802A3 /* Entity */,
-				C86D025D219981CD00D802A3 /* Router */,
+				C878E584219ACE6C00B2B941 /* View */,
+				C878E580219ACE6C00B2B941 /* Interactor */,
+				C878E581219ACE6C00B2B941 /* Presenter */,
+				C878E582219ACE6C00B2B941 /* Entity */,
+				C878E583219ACE6C00B2B941 /* Router */,
 			);
 			path = VIPER;
 			sourceTree = "<group>";
@@ -379,34 +397,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		C86D025A219981CD00D802A3 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		C86D025B219981CD00D802A3 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		C86D025C219981CD00D802A3 /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Entity;
-			sourceTree = "<group>";
-		};
-		C86D025D219981CD00D802A3 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
 		C86D025E219981CD00D802A3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -416,9 +406,50 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		C86D025F219981CD00D802A3 /* View */ = {
+		C878E580219ACE6C00B2B941 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				C878E594219AD56800B2B941 /* VIPERDataProvider.h */,
+				C878E595219AD59400B2B941 /* VIPERDataOutput.h */,
+				C878E588219ACEA700B2B941 /* VIPERInteractor.h */,
+				C878E589219ACEA700B2B941 /* VIPERInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C878E581219ACE6C00B2B941 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C878E596219AD79600B2B941 /* VIPERViewEventHandler.h */,
+				C878E58B219ACEBB00B2B941 /* VIPERPresenter.h */,
+				C878E58C219ACEBB00B2B941 /* VIPERPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C878E582219ACE6C00B2B941 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C878E58E219ACEE600B2B941 /* VIPERAnimal.h */,
+				C878E58F219ACEE600B2B941 /* VIPERAnimal.m */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C878E583219ACE6C00B2B941 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C878E591219ACEFC00B2B941 /* VIPERRouter.h */,
+				C878E592219ACEFC00B2B941 /* VIPERRouter.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C878E584219ACE6C00B2B941 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C878E585219ACE8C00B2B941 /* VIPERView.h */,
+				C878E586219ACE8C00B2B941 /* VIPERView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -562,15 +593,20 @@
 				C86D024921995F7E00D802A3 /* MVPAnimalPresenter.m in Sources */,
 				C86D024521995EB100D802A3 /* MVPView.m in Sources */,
 				C86D024621995EB100D802A3 /* MVPViewController.m in Sources */,
+				C878E587219ACE8C00B2B941 /* VIPERView.m in Sources */,
 				C86D022721992CCF00D802A3 /* CocoaMVCViewController.m in Sources */,
+				C878E58D219ACEBB00B2B941 /* VIPERPresenter.m in Sources */,
 				C86D022A21992D4900D802A3 /* CocoaMVCAnimal.h.m in Sources */,
 				C86D01F9219929C900D802A3 /* main.m in Sources */,
 				C86D01EB219929C700D802A3 /* AppDelegate.m in Sources */,
 				C86D023921995BED00D802A3 /* MVCAnimalDetailView.m in Sources */,
 				C86D023621995BD900D802A3 /* MVCAnimal.m in Sources */,
 				C86D024421995EB100D802A3 /* MVPAnimal.m in Sources */,
+				C878E590219ACEE600B2B941 /* VIPERAnimal.m in Sources */,
+				C878E58A219ACEA700B2B941 /* VIPERInteractor.m in Sources */,
 				C86D023321995BB900D802A3 /* MVCViewController.m in Sources */,
 				C86D02562199682900D802A3 /* MVVMView.m in Sources */,
+				C878E593219ACEFC00B2B941 /* VIPERRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

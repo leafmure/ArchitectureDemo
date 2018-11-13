@@ -1,14 +1,15 @@
 //
-//  MVCAnimalDetailView.m
+//  VIPERView.m
 //  架构模式学习
 //
-//  Created by mo2323 on 2018/11/12.
+//  Created by mo2323 on 2018/11/13.
 //  Copyright © 2018年 com.developer.meanmouse. All rights reserved.
 //
 
-#import "MVPView.h"
+#import "VIPERView.h"
+#import "VIPERAnimal.h"
 
-@implementation MVPView
+@implementation VIPERView
 
 #pragma mark - ====== init method ======
 - (instancetype)initWithFrame:(CGRect)frame
@@ -19,6 +20,20 @@
         [self initSubViews];
     }
     return self;
+}
+
+- (void)setAnimalDetail:(VIPERAnimal *)animal
+{
+    _nameLabel.text = animal.name;
+    _bloodVolumeLabel.text = [NSString stringWithFormat:@"血量：%0.2f", animal.bloodVolume];
+    _defensesLabel.text = [NSString stringWithFormat:@"防御：%0.2f", animal.defenses];
+    _aggressivityLabel.text = [NSString stringWithFormat:@"攻击：%0.2f", animal.aggressivity];
+    if (animal.bloodVolume == 0) {
+        
+        _attackButton.enabled = NO;
+        _attackButton.backgroundColor = [UIColor lightGrayColor];
+    }
+    [_attackButton setTitle:[NSString stringWithFormat:@"攻击%@",animal.name] forState:UIControlStateNormal];
 }
 
 - (void)initSubViews
