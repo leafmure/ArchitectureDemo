@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VIPERViewEventHandler.h"
+@class VIPERView;
 
 @interface VIPERViewController : UIViewController
+/** @brief mainView */
+@property (nonatomic,strong) VIPERView *mainView;
+/** @brief eventHandler */
+@property (nonatomic,weak) id<VIPERViewEventHandler> eventHandler;
 
 @end

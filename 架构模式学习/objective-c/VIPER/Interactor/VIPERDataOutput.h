@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)receiverAnimalData:(VIPERAnimal *)animal;
 
+- (void)receiverPromptText:(NSString *)text isError:(BOOL)isError;
+
 @end
 
 NS_ASSUME_NONNULL_END

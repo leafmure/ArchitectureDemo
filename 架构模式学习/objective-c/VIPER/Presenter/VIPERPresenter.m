@@ -7,18 +7,38 @@
 //
 
 #import "VIPERPresenter.h"
+#import "VIPERAnimal.h"
 #import "VIPERView.h"
+
+@interface VIPERPresenter ()
+
+
+@end
 
 @implementation VIPERPresenter
 
 - (void)attackAnimalButtonAction
 {
-    [self.animalDataProvider provideAnimal];
+    
+    [self.interactor attackAnimal];
 }
 
+#pragma mark - ====== output method ======
 - (void)receiverAnimalData:(VIPERAnimal *)animal
 {
     [self.view setAnimalDetail:animal];
+}
+
+- (void)receiverPromptText:(NSString *)text isError:(BOOL)isError
+{
+    _view.promptLabel.textColor = (isError) ? [UIColor redColor] : [UIColor greenColor];
+    _view.promptLabel.text = text;
+    _view.promptLabel.hidden = NO;
+    __weak VIPERPresenter *weakSelf = self;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        weakSelf.view.promptLabel.hidden = YES;
+    });
 }
 
 @end

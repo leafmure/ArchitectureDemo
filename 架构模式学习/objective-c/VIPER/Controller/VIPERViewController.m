@@ -7,6 +7,7 @@
 //
 
 #import "VIPERViewController.h"
+#import "VIPERView.h"
 
 @interface VIPERViewController ()
 
@@ -19,6 +20,21 @@
     // Do any additional setup after loading the view.
     //https://www.jianshu.com/p/a901de9c7eaf
     //http://ios.jobbole.com/83727/
+    
+    [self initView];
+}
+
+- (void)initView
+{
+    _mainView = [[VIPERView alloc] initWithFrame:self.view.bounds];
+    [_mainView.attackButton addTarget:self action:@selector(attackButtonAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_mainView];
+}
+
+
+- (void)attackButtonAction
+{
+    [_eventHandler attackAnimalButtonAction];
 }
 
 /*

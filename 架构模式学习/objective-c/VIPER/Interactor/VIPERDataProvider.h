@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)provideAnimal;
 
+- (void)attackAnimal;
+
 @end
 
 NS_ASSUME_NONNULL_END

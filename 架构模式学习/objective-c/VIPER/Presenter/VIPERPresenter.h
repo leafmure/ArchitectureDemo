@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,weak) VIPERView *view;
 
 /** @brief animalDataProvider */
-@property (nonatomic,weak) NSObject<VIPERDataProvider> *animalDataProvider;
+@property (nonatomic,weak) NSObject<VIPERDataProvider> *interactor;
 
 @end
 

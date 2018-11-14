@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface VIPERRouter : NSObject
+- (void)connectViperModule;
 
 @end
 

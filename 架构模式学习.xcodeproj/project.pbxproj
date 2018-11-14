@@ -55,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A7A49F2A219B1242007FDFCC /* VIPERViewEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIPERViewEventHandler.h; sourceTree = "<group>"; };
 		C86D01E6219929C700D802A3 /* 架构模式学习.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "架构模式学习.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C86D01E9219929C700D802A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C86D01EA219929C700D802A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -113,7 +114,6 @@
 		C878E592219ACEFC00B2B941 /* VIPERRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VIPERRouter.m; sourceTree = "<group>"; };
 		C878E594219AD56800B2B941 /* VIPERDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIPERDataProvider.h; sourceTree = "<group>"; };
 		C878E595219AD59400B2B941 /* VIPERDataOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIPERDataOutput.h; sourceTree = "<group>"; };
-		C878E596219AD79600B2B941 /* VIPERViewEventHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIPERViewEventHandler.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -420,7 +420,6 @@
 		C878E581219ACE6C00B2B941 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				C878E596219AD79600B2B941 /* VIPERViewEventHandler.h */,
 				C878E58B219ACEBB00B2B941 /* VIPERPresenter.h */,
 				C878E58C219ACEBB00B2B941 /* VIPERPresenter.m */,
 			);
@@ -448,6 +447,7 @@
 		C878E584219ACE6C00B2B941 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A7A49F2A219B1242007FDFCC /* VIPERViewEventHandler.h */,
 				C878E585219ACE8C00B2B941 /* VIPERView.h */,
 				C878E586219ACE8C00B2B941 /* VIPERView.m */,
 			);

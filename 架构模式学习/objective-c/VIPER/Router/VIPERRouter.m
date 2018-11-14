@@ -7,7 +7,29 @@
 //
 
 #import "VIPERRouter.h"
+#import "VIPERViewController.h"
+#import "VIPERInteractor.h"
+#import "VIPERPresenter.h"
+
+@interface VIPERRouter ()
+/** @brief presenter */
+@property (nonatomic,strong) VIPERPresenter *presenter;
+/** @brief interactor */
+@property (nonatomic,strong) VIPERInteractor *interactor;
+
+@end
 
 @implementation VIPERRouter
+
+- (void)connectViperModule
+{
+    VIPERViewController *view = [[VIPERViewController alloc] init];
+    VIPERInteractor *interactor = [[VIPERInteractor alloc] init];
+    VIPERPresenter *presenter = [[VIPERPresenter alloc] init];
+    presenter.view = view.mainView;
+    presenter.interactor = _interactor;
+    view.eventHandler = presenter;
+    interactor.output = presenter;
+}
 
 @end
