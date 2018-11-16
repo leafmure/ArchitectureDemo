@@ -15,6 +15,7 @@
 
 @implementation VIPERViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -22,6 +23,7 @@
     //http://ios.jobbole.com/83727/
     
     [self initView];
+    [_eventHandler viewDidLoadLifeMethod];
 }
 
 - (void)initView

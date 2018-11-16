@@ -10,7 +10,7 @@
 #import "MVCViewController.h"
 #import "MVPViewController.h"
 #import "MVVMViewController.h"
-#import "VIPERViewController.h"
+#import "VIPERRouter.h"
 
 @interface AppDelegate ()
 
@@ -22,8 +22,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window.backgroundColor = [UIColor whiteColor];
-    VIPERViewController *rootVC = [[VIPERViewController alloc] init];
-    self.window.rootViewController = rootVC;
+//    VIPERViewController *rootVC = [[VIPERViewController alloc] init];
+//    self.window.rootViewController = rootVC;
+    [VIPERRouter setRootViewControllerToWindow:self.window];
     return YES;
 }
 

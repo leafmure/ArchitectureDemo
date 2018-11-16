@@ -23,6 +23,11 @@
     [self.interactor attackAnimal];
 }
 
+- (void)viewDidLoadLifeMethod
+{
+    [self.interactor provideAnimal];
+}
+
 #pragma mark - ====== output method ======
 - (void)receiverAnimalData:(VIPERAnimal *)animal
 {

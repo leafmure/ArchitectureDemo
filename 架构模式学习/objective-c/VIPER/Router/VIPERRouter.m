@@ -10,26 +10,25 @@
 #import "VIPERViewController.h"
 #import "VIPERInteractor.h"
 #import "VIPERPresenter.h"
-
-@interface VIPERRouter ()
-/** @brief presenter */
-@property (nonatomic,strong) VIPERPresenter *presenter;
-/** @brief interactor */
-@property (nonatomic,strong) VIPERInteractor *interactor;
-
-@end
+#import "VIPERView.h"
 
 @implementation VIPERRouter
 
-- (void)connectViperModule
++ (void)setRootViewControllerToWindow:(UIWindow *)window
 {
-    VIPERViewController *view = [[VIPERViewController alloc] init];
+    
+    window.rootViewController = [self connectViperModule];
+}
+
++ (VIPERViewController *)connectViperModule
+{
+    VIPERViewController *viewController = [[VIPERViewController alloc] init];
     VIPERInteractor *interactor = [[VIPERInteractor alloc] init];
     VIPERPresenter *presenter = [[VIPERPresenter alloc] init];
-    presenter.view = view.mainView;
-    presenter.interactor = _interactor;
-    view.eventHandler = presenter;
+    presenter.interactor = interactor;
+    viewController.eventHandler = presenter;
     interactor.output = presenter;
+    return viewController;
 }
 
 @end
