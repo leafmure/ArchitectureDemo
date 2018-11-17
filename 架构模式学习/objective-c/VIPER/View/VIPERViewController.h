@@ -14,6 +14,6 @@
 /** @brief mainView */
 @property (nonatomic,strong) VIPERView *mainView;
 /** @brief eventHandler */
-@property (nonatomic,weak) id<VIPERViewEventHandler> eventHandler;
+@property (nonatomic,strong) id<VIPERViewEventHandler> eventHandler;
 
 @end

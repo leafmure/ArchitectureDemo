@@ -7,12 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+@class VIPERView;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol VIPERViewEventHandler <NSObject>
 
 - (void)attackAnimalButtonAction;
+
+- (void)viperViewIsAlready:(VIPERView *)view;
 
 - (void)viewDidLoadLifeMethod;
 

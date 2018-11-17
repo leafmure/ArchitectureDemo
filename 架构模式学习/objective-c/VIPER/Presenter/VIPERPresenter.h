@@ -15,12 +15,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface VIPERPresenter : NSObject<VIPERDataOutput,VIPERViewEventHandler>
-
-/** @brief view */
-@property (nonatomic,weak) VIPERView *view;
-
 /** @brief animalDataProvider */
-@property (nonatomic,weak) NSObject<VIPERDataProvider> *interactor;
+@property (nonatomic,strong) NSObject<VIPERDataProvider> *interactor;
 
 @end
 

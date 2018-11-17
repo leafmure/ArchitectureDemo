@@ -11,8 +11,8 @@
 #import "VIPERView.h"
 
 @interface VIPERPresenter ()
-
-
+/** @brief view */
+@property (nonatomic,weak) VIPERView *view;
 @end
 
 @implementation VIPERPresenter
@@ -29,6 +29,11 @@
 }
 
 #pragma mark - ====== output method ======
+- (void)viperViewIsAlready:(VIPERView *)view
+{
+    _view = view;
+}
+
 - (void)receiverAnimalData:(VIPERAnimal *)animal
 {
     [self.view setAnimalDetail:animal];

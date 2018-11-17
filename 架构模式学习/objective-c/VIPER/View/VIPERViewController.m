@@ -31,6 +31,7 @@
     _mainView = [[VIPERView alloc] initWithFrame:self.view.bounds];
     [_mainView.attackButton addTarget:self action:@selector(attackButtonAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_mainView];
+    [_eventHandler viperViewIsAlready:_mainView];
 }
 
 
