@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A717BF7221A2E7CA001F3FDD /* SWIFTVIPERDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A717BF7121A2E7CA001F3FDD /* SWIFTVIPERDataProvider.swift */; };
+		A717BF7421A2E7FE001F3FDD /* SWIFTVIPERDataOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A717BF7321A2E7FE001F3FDD /* SWIFTVIPERDataOutput.swift */; };
+		A717BF7621A2E83C001F3FDD /* SWIFTVIPERViewEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A717BF7521A2E83C001F3FDD /* SWIFTVIPERViewEventHandler.swift */; };
 		A76EF929219EFC9F000A2D32 /* VIPERViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EF928219EFC9F000A2D32 /* VIPERViewController.m */; };
 		A76EF92C219F00D5000A2D32 /* MVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EF92A219F00D5000A2D32 /* MVVMViewController.m */; };
 		A76EF92F219F00FC000A2D32 /* MVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A76EF92D219F00FB000A2D32 /* MVPViewController.m */; };
@@ -75,6 +78,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A717BF7121A2E7CA001F3FDD /* SWIFTVIPERDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWIFTVIPERDataProvider.swift; sourceTree = "<group>"; };
+		A717BF7321A2E7FE001F3FDD /* SWIFTVIPERDataOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWIFTVIPERDataOutput.swift; sourceTree = "<group>"; };
+		A717BF7521A2E83C001F3FDD /* SWIFTVIPERViewEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWIFTVIPERViewEventHandler.swift; sourceTree = "<group>"; };
 		A76EF927219EFC9E000A2D32 /* VIPERViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIPERViewController.h; sourceTree = "<group>"; };
 		A76EF928219EFC9F000A2D32 /* VIPERViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIPERViewController.m; sourceTree = "<group>"; };
 		A76EF92A219F00D5000A2D32 /* MVVMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMViewController.m; sourceTree = "<group>"; };
@@ -205,8 +211,8 @@
 		C86D01E8219929C700D802A3 /* 架构模式学习 */ = {
 			isa = PBXGroup;
 			children = (
-				C8D7CB5821A26BCA00588FA7 /* swift */,
 				C86D021C21992A1400D802A3 /* objective-c */,
+				C8D7CB5821A26BCA00588FA7 /* swift */,
 				C86D01E9219929C700D802A3 /* AppDelegate.h */,
 				C86D01EA219929C700D802A3 /* AppDelegate.m */,
 				C86D01EC219929C700D802A3 /* ViewController.h */,
@@ -554,6 +560,8 @@
 		C8C9D4D421A2C065007E910E /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				A717BF7121A2E7CA001F3FDD /* SWIFTVIPERDataProvider.swift */,
+				A717BF7321A2E7FE001F3FDD /* SWIFTVIPERDataOutput.swift */,
 				C8C9D4DC21A2C0C6007E910E /* SWIFTVIPERInteractor.swift */,
 			);
 			path = Interactor;
@@ -580,6 +588,7 @@
 			children = (
 				C8C9D4D821A2C08E007E910E /* SWIFTVIPERView.swift */,
 				C8C9D4DA21A2C0A1007E910E /* SWIFTVIPERViewController.swift */,
+				A717BF7521A2E83C001F3FDD /* SWIFTVIPERViewEventHandler.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -587,9 +596,9 @@
 		C8D7CB4B21A26B8700588FA7 /* 一般使用的MVC */ = {
 			isa = PBXGroup;
 			children = (
-				C8D7CB4C21A26B8700588FA7 /* Controller */,
 				C8D7CB4F21A26B8700588FA7 /* Model */,
 				C8D7CB5221A26B8700588FA7 /* View */,
+				C8D7CB4C21A26B8700588FA7 /* Controller */,
 			);
 			path = "一般使用的MVC";
 			sourceTree = "<group>";
@@ -809,11 +818,13 @@
 				C86D024921995F7E00D802A3 /* MVPAnimalPresenter.m in Sources */,
 				C86D024521995EB100D802A3 /* MVPView.m in Sources */,
 				C8D7CB5521A26B8700588FA7 /* MVCViewController.m in Sources */,
+				A717BF7621A2E83C001F3FDD /* SWIFTVIPERViewEventHandler.swift in Sources */,
 				C878E587219ACE8C00B2B941 /* VIPERView.m in Sources */,
 				C86D022721992CCF00D802A3 /* CocoaMVCViewController.m in Sources */,
 				C8C9D4CD21A2B85E007E910E /* SWIFTMVPView.swift in Sources */,
 				C8C9D4C321A2AAB0007E910E /* SWIFTMVVMViewController.swift in Sources */,
 				A76EF929219EFC9F000A2D32 /* VIPERViewController.m in Sources */,
+				A717BF7221A2E7CA001F3FDD /* SWIFTVIPERDataProvider.swift in Sources */,
 				C878E58D219ACEBB00B2B941 /* VIPERPresenter.m in Sources */,
 				C8C9D4BF21A2AA73007E910E /* SWIFTMVVMAnimal.swift in Sources */,
 				C86D022A21992D4900D802A3 /* CocoaMVCAnimal.h.m in Sources */,
@@ -822,6 +833,7 @@
 				C8D7CB6121A26DE900588FA7 /* SWIFTCocoaMVCAnimal.swift in Sources */,
 				C8C9D4DB21A2C0A1007E910E /* SWIFTVIPERViewController.swift in Sources */,
 				C86D01EB219929C700D802A3 /* AppDelegate.m in Sources */,
+				A717BF7421A2E7FE001F3FDD /* SWIFTVIPERDataOutput.swift in Sources */,
 				C8C9D4D121A2B885007E910E /* SWIFTMVPPresenter.swift in Sources */,
 				C8C9D4E121A2C0FB007E910E /* SWIFTVIPERAnimal.swift in Sources */,
 				A76EF92F219F00FC000A2D32 /* MVPViewController.m in Sources */,

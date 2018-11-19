@@ -8,21 +8,32 @@
 
 import UIKit
 
-protocol SWIFTVIPERViewEventHandler: class {
-    
-    func attackAnimalButtonAction();
-    func viperViewIsAlready(view:SWIFTVIPERView);
-    func viewDidLoadLifeMethod();
-}
-
 class SWIFTVIPERViewController: UIViewController {
 
+    var eventHandler: SWIFTVIPERViewEventHandler!
+    var mainView: SWIFTVIPERView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor.white;
+        self.initView();
+        eventHandler.viewDidLoadLifeMethod();
     }
     
+    private func initView() {
+        
+        mainView = SWIFTVIPERView(frame: self.view.bounds);
+        mainView.attackButton.addTarget(self, action: #selector(SWIFTVIPERViewController.attackButtonAction), for: UIControl.Event.touchUpInside);
+        self.view.addSubview(mainView);
+        eventHandler.viperViewIsAlready(view: mainView);
+    }
+    
+    @objc private func attackButtonAction(sender: UIButton) {
+        
+        eventHandler.attackAnimalButtonAction();
+    }
 
     /*
     // MARK: - Navigation

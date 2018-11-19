@@ -8,16 +8,6 @@
 
 import UIKit
 
-protocol SWIFTVIPERDataProvider: class {
-    func provideAnimal();
-    func attackAnimal();
-}
-
-protocol SWIFTVIPERDataOutput: class {
-    func receiverAnimalData(animal:SWIFTVIPERAnimal);
-    func receiverPromptText(text:String, isError:Bool);
-}
-
 class SWIFTVIPERInteractor: NSObject,SWIFTVIPERDataProvider {
 
     weak var output: SWIFTVIPERDataOutput!

@@ -19,6 +19,7 @@ class SWIFTMVVMViewController: UIViewController, SWIFTMVVMViewModelObserver {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor.white;
         self.initView();
         self.initViewModel();
     }

@@ -32,6 +32,12 @@ class SWIFTVIPERView: UIView {
     
     func setAnimal(animal: SWIFTVIPERAnimal) {
         
+        if animal.bloodVolume == 0 {
+            
+            attackButton.isEnabled = false;
+            attackButton.backgroundColor = UIColor.lightGray;
+        }
+        attackButton.setTitle("攻击\(animal.name ?? "")", for: UIControl.State.normal);
         nameLabel.text = animal.name;
         bloodVolumeLabel.text = "血量：\(animal.bloodVolume)";
         defensesLabel.text = "防御：\(animal.defenses)";

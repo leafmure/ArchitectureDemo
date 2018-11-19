@@ -10,6 +10,7 @@
 
 @interface VIPERRouter : NSObject
 + (void)setRootViewControllerToWindow:(UIWindow *)window;
++ (void)pushFromController:(UIViewController *)fromController;
 
 @end
 

@@ -20,6 +20,11 @@
     window.rootViewController = [self connectViperModule];
 }
 
++ (void)pushFromController:(UIViewController *)fromController
+{
+    [fromController.navigationController pushViewController:[self connectViperModule] animated:YES];
+}
+
 + (VIPERViewController *)connectViperModule
 {
     VIPERViewController *viewController = [[VIPERViewController alloc] init];

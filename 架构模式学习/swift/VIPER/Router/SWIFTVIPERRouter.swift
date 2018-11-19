@@ -9,5 +9,25 @@
 import UIKit
 
 class SWIFTVIPERRouter: NSObject {
-
+    
+    @objc class func setRootViewControllerTo(window:UIWindow) {
+        
+        window.rootViewController = self.connectViperModule();
+    }
+    
+    @objc class func pushFrom(controller:UIViewController) {
+        
+        controller.navigationController?.pushViewController(self.connectViperModule(), animated: true);
+    }
+    
+    private class func connectViperModule() -> SWIFTVIPERViewController {
+        
+        let viewController = SWIFTVIPERViewController();
+        let interactor = SWIFTVIPERInteractor();
+        let presenter = SWIFTVIPERPresenter();
+        presenter.interactor = interactor;
+        viewController.eventHandler = presenter;
+        interactor.output = presenter;
+        return viewController;
+    }
 }

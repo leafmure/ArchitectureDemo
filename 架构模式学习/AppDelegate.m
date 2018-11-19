@@ -7,11 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "MVCViewController.h"
-#import "MVPViewController.h"
-#import "MVVMViewController.h"
-#import "VIPERRouter.h"
-#import "架构模式学习-Swift.h"
 
 @interface AppDelegate ()
 
@@ -21,12 +16,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+
     self.window.backgroundColor = [UIColor whiteColor];
     
-    SWIFTMVPViewController *rootVC = [[SWIFTMVPViewController alloc] init];
-    self.window.rootViewController = rootVC;
-//    [VIPERRouter setRootViewControllerToWindow:self.window];
     return YES;
 }
 
