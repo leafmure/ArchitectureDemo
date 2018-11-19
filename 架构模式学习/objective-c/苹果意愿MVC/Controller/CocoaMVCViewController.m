@@ -31,7 +31,7 @@
 
 - (void)initView
 {
-    _detailView = [[CocoaMVCAnimalDetailView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width / 3, 150)];
+    _detailView = [[CocoaMVCAnimalDetailView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width / 3.f, 150)];
     _detailView.backgroundColor = [UIColor lightGrayColor];
     _detailView.center = self.view.center;
     

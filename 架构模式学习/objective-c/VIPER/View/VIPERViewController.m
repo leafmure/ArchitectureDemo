@@ -18,10 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    //https://www.jianshu.com/p/a901de9c7eaf
-    //http://ios.jobbole.com/83727/
-    
+    // Do any additional setup after loading the view.    
     [self initView];
     [_eventHandler viewDidLoadLifeMethod];
 }
@@ -40,14 +37,5 @@
     [_eventHandler attackAnimalButtonAction];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
